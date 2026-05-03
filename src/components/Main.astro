@@ -1,0 +1,84 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Portfolio</title>
+    </head>
+    <!--
+    Changed 'justify-between' to 'justify-center' and added 'items-center'
+    to pull the entire content block into the exact middle of the viewport.
+  -->
+    <body
+        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col justify-center items-center p-8 selection:bg-gray-300"
+    >
+        <!-- Wrapper to keep the max width and handle spacing between top/bottom -->
+        <div class="max-w-4xl w-full flex flex-col gap-16 md:gap-20">
+            <!-- Top Section: Title & Summary -->
+            <main>
+                <h1
+                    class="text-5xl md:text-7xl font-bold tracking-tight mb-12 text-black"
+                >
+                    ungkuamer.
+                </h1>
+
+                <div
+                    class="space-y-6 xs:text-xs sm:text-sm md:text-lg text-gray-800"
+                >
+                    <p>
+                        MEng Computer Science w/ AI student at the University of
+                        Leeds, graduating July 2026. Experienced in implementing
+                        machine learning algorithms, graph-based optimisation,
+                        and full-stack systems. Built and deployed projects
+                        involving reinforcement learning, scalable web
+                        applications, graphs and routing engines. I have
+                        particular interest in maps, public transport and
+                        logistics optimisation. I do freelance web dev on the
+                        side.
+                    </p>
+
+                    <!-- Dotted lines -->
+                    <div class="max-w-2xl space-y-4 pt-2">
+                        <div class="border-b-4 border-dotted w-full"></div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Bottom Section: Links -->
+            <nav>
+                <ul
+                    class="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 text-lg md:text-xl text-gray-700"
+                >
+                    <li>
+                        <a
+                            href="/resume"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            resume
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/work"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            my work and researches
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/contact"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            contact me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>
