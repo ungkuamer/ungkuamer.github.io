@@ -1,0 +1,579 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>ua. - rates</title>
+    </head>
+    <body
+        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col items-center p-8 md:p-16 selection:bg-gray-300"
+    >
+        <!-- Wrapper matching the portfolio max-width and layout rhythm -->
+        <div class="max-w-4xl w-full flex flex-col gap-12 md:gap-16">
+            <!-- Header Section -->
+            <header>
+                <h1
+                    class="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-black"
+                >
+                    rates.
+                </h1>
+                <div
+                    class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm md:text-base text-gray-700"
+                >
+                    <a
+                        href="/"
+                        class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
+                    >
+                        &larr; home
+                    </a>
+                    <span class="text-gray-300 hidden sm:inline">|</span>
+                    <p class="text-gray-600">
+                        Transparent pricing for custom freelance web
+                        engineering. From scratch builds and ongoing maintenance
+                        to audits, consultations, and modifying existing
+                        codebases. Base rates vary depending on specific project
+                        requirements—free consultations are provided to deliver
+                        tailored, exact quotes.
+                    </p>
+                </div>
+                <div
+                    class="border-b-4 border-dotted border-gray-300 w-full mt-6"
+                >
+                </div>
+            </header>
+
+            <!-- Grid of 3 Main Service Tiers -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Tier 1: Static Pages -->
+                <div
+                    class="bg-white border-2 border-black p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all select-none"
+                >
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3
+                                class="font-bold text-lg text-black uppercase tracking-wider"
+                            >
+                                static pages.
+                            </h3>
+                            <span
+                                class="bg-black text-white text-[10px] px-2 py-0.5 font-bold tracking-widest uppercase"
+                            >
+                                5 DAYS
+                            </span>
+                        </div>
+                        <p class="text-2xl font-extrabold text-black mb-2">
+                            RM 500 <span
+                                class="text-sm font-normal text-gray-500 font-mono"
+                                >/ page</span
+                            >
+                        </p>
+                        <p
+                            class="text-xs text-gray-500 mb-6 italic border-b border-dashed border-gray-200 pb-4"
+                        >
+                            Best for portfolios, event pages, & fast landing
+                            sites.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-700 font-mono">
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> High
+                                performance (Astro)
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Bespoke
+                                responsive layout
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> SEO
+                                & mobile optimization
+                            </li>
+                            <li class="flex items-start gap-2 text-gray-500">
+                                <span class="text-black font-bold">[+]</span> RM500
+                                for 48h delivery
+                            </li>
+                        </ul>
+                    </div>
+                    <a
+                        href="/contact?project=static&price=RM500_per_page"
+                        class="mt-8 block text-center border-2 border-black bg-black text-white hover:bg-white hover:text-black font-bold py-2.5 px-4 transition-all text-sm uppercase tracking-wider"
+                    >
+                        select plan &rarr;
+                    </a>
+                </div>
+
+                <!-- Tier 2: Dynamic Site -->
+                <div
+                    class="bg-white border-2 border-black p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all select-none"
+                >
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3
+                                class="font-bold text-lg text-black uppercase tracking-wider"
+                            >
+                                dynamic site.
+                            </h3>
+                            <span
+                                class="bg-black text-white text-[10px] px-2 py-0.5 font-bold tracking-widest uppercase"
+                            >
+                                3-5 weeks
+                            </span>
+                        </div>
+                        <p class="text-2xl font-extrabold text-black mb-2">
+                            RM 3,500<span
+                                class="text-sm font-normal text-gray-500 font-mono"
+                                >+</span
+                            >
+                        </p>
+                        <p
+                            class="text-xs text-gray-500 mb-6 italic border-b border-dashed border-gray-200 pb-4"
+                        >
+                            Best for blogs, news feeds, or active project logs.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-700 font-mono">
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Headless
+                                CMS integration
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Self-manageable
+                                content
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Dynamic
+                                page generation
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Client
+                                review/staging URL
+                            </li>
+                            <li class="flex items-start gap-2 text-gray-500">
+                                <span class="text-black font-bold">[+]</span> Interactive
+                                filtering/search
+                            </li>
+                        </ul>
+                    </div>
+                    <a
+                        href="/contact?project=dynamic&price=RM3500_plus"
+                        class="mt-8 block text-center border-2 border-black bg-black text-white hover:bg-white hover:text-black font-bold py-2.5 px-4 transition-all text-sm uppercase tracking-wider"
+                    >
+                        select plan &rarr;
+                    </a>
+                </div>
+
+                <!-- Tier 3: Custom Web App -->
+                <div
+                    class="bg-white border-2 border-black p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all select-none"
+                >
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3
+                                class="font-bold text-lg text-black uppercase tracking-wider"
+                            >
+                                custom web app.
+                            </h3>
+                            <span
+                                class="bg-black text-white text-[10px] px-2 py-0.5 font-bold tracking-widest uppercase"
+                            >
+                                3-8+ weeks
+                            </span>
+                        </div>
+                        <p class="text-2xl font-extrabold text-black mb-2">
+                            RM 5,000<span
+                                class="text-sm font-normal text-gray-500 font-mono"
+                                >+</span
+                            >
+                        </p>
+                        <p
+                            class="text-xs text-gray-500 mb-6 italic border-b border-dashed border-gray-200 pb-4"
+                        >
+                            Best for SaaS products, database utilities, or
+                            dashboards.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-700 font-mono">
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Database
+                                & security setup
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> User
+                                signup, login & roles
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Interactive
+                                dashboard views
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-black font-bold">[x]</span> Stripe
+                                / Billplz payments
+                            </li>
+                            <li class="flex items-start gap-2 text-gray-500">
+                                <span class="text-black font-bold">[+]</span> Custom
+                                API / AI integrations
+                            </li>
+                        </ul>
+                    </div>
+                    <a
+                        href="/contact?project=custom_web_app&price=RM5000_plus"
+                        class="mt-8 block text-center border-2 border-black bg-black text-white hover:bg-white hover:text-black font-bold py-2.5 px-4 transition-all text-sm uppercase tracking-wider"
+                    >
+                        select plan &rarr;
+                    </a>
+                </div>
+            </section>
+
+            <!-- Additional Services Section -->
+            <section class="space-y-6">
+                <h2
+                    class="text-2xl font-bold uppercase tracking-wider text-black"
+                >
+                    additional services.
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <!-- Tier 4: Maintenance & Deploy -->
+                    <div
+                        class="bg-white border-2 border-black p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all select-none"
+                    >
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h3
+                                    class="font-bold text-lg text-black uppercase tracking-wider"
+                                >
+                                    maintenance &amp; deploy.
+                                </h3>
+                                <span
+                                    class="bg-black text-white text-[10px] px-2 py-0.5 font-bold tracking-widest uppercase"
+                                >
+                                    monthly
+                                </span>
+                            </div>
+                            <p class="text-2xl font-extrabold text-black mb-2">
+                                RM 500<span
+                                    class="text-sm font-normal text-gray-500 font-mono"
+                                    >+ /mo</span
+                                >
+                            </p>
+                            <p
+                                class="text-xs text-gray-500 mb-6 italic border-b border-dashed border-gray-200 pb-4"
+                            >
+                                Best for keeping existing sites updated, secure,
+                                and online.
+                            </p>
+                            <ul
+                                class="space-y-3 text-sm text-gray-700 font-mono"
+                            >
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Content updates &amp; edits
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Security patches &amp; dependency updates
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Uptime monitoring
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Deployment &amp; hosting management
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > VPS deployment to reduce hosting costs
+                                </li>
+                                <li
+                                    class="flex items-start gap-2 text-gray-500"
+                                >
+                                    <span class="text-black font-bold">[+]</span
+                                    > Performance &amp; SEO audits
+                                </li>
+                            </ul>
+                        </div>
+                        <a
+                            href="/contact?project=maintenance&price=RM500_plus_monthly"
+                            class="mt-8 block text-center border-2 border-black bg-black text-white hover:bg-white hover:text-black font-bold py-2.5 px-4 transition-all text-sm uppercase tracking-wider"
+                        >
+                            inquire &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Tier 5: Codebase Modifications -->
+                    <div
+                        class="bg-white border-2 border-black p-6 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all select-none"
+                    >
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h3
+                                    class="font-bold text-lg text-black uppercase tracking-wider"
+                                >
+                                    codebase modifications.
+                                </h3>
+                                <span
+                                    class="bg-black text-white text-[10px] px-2 py-0.5 font-bold tracking-widest uppercase"
+                                >
+                                    custom timeline
+                                </span>
+                            </div>
+                            <p class="text-2xl font-extrabold text-black mb-2">
+                                custom<span
+                                    class="text-sm font-normal text-gray-500 font-mono"
+                                >
+                                    quotation</span
+                                >
+                            </p>
+                            <p
+                                class="text-xs text-gray-500 mb-6 italic border-b border-dashed border-gray-200 pb-4"
+                            >
+                                Best for adding features, fixing bugs, or
+                                refactoring existing projects.
+                            </p>
+                            <ul
+                                class="space-y-3 text-sm text-gray-700 font-mono"
+                            >
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Feature additions &amp; enhancements
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Bug fixes &amp; debugging
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Code refactoring &amp; optimization
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-black font-bold">[x]</span
+                                    > Third-party API integrations
+                                </li>
+                                <li
+                                    class="flex items-start gap-2 text-gray-500"
+                                >
+                                    <span class="text-black font-bold">[+]</span
+                                    > Architecture &amp; codebase audit
+                                </li>
+                            </ul>
+                        </div>
+                        <a
+                            href="/contact?project=codebase_mod&price=custom_quotation"
+                            class="mt-8 block text-center border-2 border-black bg-black text-white hover:bg-white hover:text-black font-bold py-2.5 px-4 transition-all text-sm uppercase tracking-wider"
+                        >
+                            request quote &rarr;
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="space-y-6">
+                <h2
+                    class="text-2xl font-bold uppercase tracking-wider text-black"
+                >
+                    frequently asked questions.
+                </h2>
+
+                <div class="border-t-2 border-black space-y-0">
+                    <!-- FAQ 1 -->
+                    <details
+                        class="group border-b border-gray-300 py-4 cursor-pointer select-none"
+                    >
+                        <summary
+                            class="flex justify-between items-center font-bold text-sm md:text-base text-black list-none focus:outline-none"
+                        >
+                            <span
+                                >What is the difference between a Dynamic Site
+                                and a Custom Web App?</span
+                            >
+                            <span
+                                class="text-xl font-bold transition-transform duration-300 group-open:rotate-45"
+                                >+</span
+                            >
+                        </summary>
+                        <div
+                            class="mt-4 text-xs md:text-sm text-gray-700 space-y-3 leading-relaxed pr-6"
+                        >
+                            <p>
+                                A **Dynamic Site** is content-focused. You use
+                                an easy-to-use editor (CMS) to manage pages,
+                                write blog posts, or edit portfolio projects
+                                without coding. It is perfect when visitors just
+                                need to read, search, or filter content.
+                            </p>
+                            <p>
+                                A **Custom Web App** is interaction-focused. It
+                                includes private user accounts, dashboards,
+                                database storage, complex computational logic
+                                (e.g. database architectures, custom AI
+                                integrations, or custom backends), or automated
+                                third-party integrations (payments, booking
+                                APIs).
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details
+                        class="group border-b border-gray-300 py-4 cursor-pointer select-none"
+                    >
+                        <summary
+                            class="flex justify-between items-center font-bold text-sm md:text-base text-black list-none focus:outline-none"
+                        >
+                            <span
+                                >Can we upgrade a Static Page website to a
+                                Dynamic or Custom App later?</span
+                            >
+                            <span
+                                class="text-xl font-bold transition-transform duration-300 group-open:rotate-45"
+                                >+</span
+                            >
+                        </summary>
+                        <div
+                            class="mt-4 text-xs md:text-sm text-gray-700 leading-relaxed pr-6"
+                        >
+                            <p>
+                                Yes. Since I construct all web properties using
+                                highly modular architectures (Astro or Next.js),
+                                we can comfortably scale up your existing design
+                                later to support CMS collections, database
+                                architectures, or payment checkouts without
+                                starting from scratch.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details
+                        class="group border-b border-gray-300 py-4 cursor-pointer select-none"
+                    >
+                        <summary
+                            class="flex justify-between items-center font-bold text-sm md:text-base text-black list-none focus:outline-none"
+                        >
+                            <span>What technologies do you develop with?</span>
+                            <span
+                                class="text-xl font-bold transition-transform duration-300 group-open:rotate-45"
+                                >+</span
+                            >
+                        </summary>
+                        <div
+                            class="mt-4 text-xs md:text-sm text-gray-700 leading-relaxed pr-6"
+                        >
+                            <p>
+                                I specialize in modern, high-performance web
+                                tooling. For static and dynamic websites, I
+                                prefer **Astro** and **Tailwind CSS** due to
+                                their unbeatable SEO capabilities and
+                                page-loading speeds. For highly dynamic web
+                                applications, I utilize **Next.js**, **React**,
+                                **Node.js**, **TypeScript**, **PostgreSQL**, and
+                                custom backend integrations when required.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details
+                        class="group border-b border-gray-300 py-4 cursor-pointer select-none"
+                    >
+                        <summary
+                            class="flex justify-between items-center font-bold text-sm md:text-base text-black list-none focus:outline-none"
+                        >
+                            <span
+                                >How does the 48h express delivery option
+                                function?</span
+                            >
+                            <span
+                                class="text-xl font-bold transition-transform duration-300 group-open:rotate-45"
+                                >+</span
+                            >
+                        </summary>
+                        <div
+                            class="mt-4 text-xs md:text-sm text-gray-700 leading-relaxed pr-6"
+                        >
+                            <p>
+                                If your design content is finalized and assets
+                                (images, copy) are fully prepared, I can
+                                expedite production to deliver your fully coded
+                                and responsivestatic pages within 48 hours for
+                                an additional RM 500. This service depends
+                                entirely on my current freelance load—I will
+                                verify availability immediately upon receiving
+                                your initial inquiry.
+                            </p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details
+                        class="group border-b border-gray-300 py-4 cursor-pointer select-none"
+                    >
+                        <summary
+                            class="flex justify-between items-center font-bold text-sm md:text-base text-black list-none focus:outline-none"
+                        >
+                            <span>What is your typical payment structure?</span>
+                            <span
+                                class="text-xl font-bold transition-transform duration-300 group-open:rotate-45"
+                                >+</span
+                            >
+                        </summary>
+                        <div
+                            class="mt-4 text-xs md:text-sm text-gray-700 leading-relaxed pr-6"
+                        >
+                            <p>
+                                For typical static and dynamic projects, I work
+                                on a **50/50 model**: a 50% upfront deposit to
+                                initiate design and development, and the
+                                remaining 50% upon successful delivery, final
+                                client sign-off, and production deployment.
+                                Custom billing milestones can be arranged for
+                                large-scale web applications.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Bottom Section Navigation links -->
+            <nav class="mt-8 pb-8">
+                <ul
+                    class="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 text-lg md:text-xl text-gray-700"
+                >
+                    <li>
+                        <a
+                            href="/"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/resume"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            resume
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/work"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            my work and researches
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/contact"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            contact me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

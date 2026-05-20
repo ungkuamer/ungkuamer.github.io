@@ -40,6 +40,14 @@ import "../styles/global.css";
                     </li>
                     <li>
                         <a
+                            href="/pricing"
+                            class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
+                        >
+                            rates
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="/contact"
                             class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
                         >
@@ -72,30 +80,32 @@ import "../styles/global.css";
             <div class="border-b-4 border-dotted border-gray-300 w-full"></div>
 
             <!-- Interactive Filters -->
-            <nav class="flex flex-wrap gap-4 text-sm sm:text-base font-bold uppercase tracking-wider">
+            <nav
+                class="flex flex-wrap gap-4 text-sm sm:text-base font-bold uppercase tracking-wider"
+            >
                 <button
                     data-filter="all"
                     class="filter-btn text-black border-b-2 border-black pb-1 transition-all duration-200 cursor-pointer"
                 >
-                    [ all ]
+                    all
                 </button>
                 <button
                     data-filter="freelance"
                     class="filter-btn text-gray-400 hover:text-black border-b-2 border-transparent hover:border-gray-300 pb-1 transition-all duration-200 cursor-pointer"
                 >
-                    [ freelance ]
+                    freelance
                 </button>
                 <button
                     data-filter="personal"
                     class="filter-btn text-gray-400 hover:text-black border-b-2 border-transparent hover:border-gray-300 pb-1 transition-all duration-200 cursor-pointer"
                 >
-                    [ personal ]
+                    personal
                 </button>
                 <button
                     data-filter="research"
                     class="filter-btn text-gray-400 hover:text-black border-b-2 border-transparent hover:border-gray-300 pb-1 transition-all duration-200 cursor-pointer"
                 >
-                    [ research ]
+                    research
                 </button>
             </nav>
 
@@ -110,8 +120,13 @@ import "../styles/global.css";
                         <div
                             class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2 mb-2"
                         >
-                            <h3 class="font-bold text-xl text-black flex flex-wrap items-center gap-x-2.5 gap-y-1">
-                                <span class="group-hover:text-black transition-colors">HSchoolOS</span>
+                            <h3
+                                class="font-bold text-xl text-black flex flex-wrap items-center gap-x-2.5 gap-y-1"
+                            >
+                                <span
+                                    class="group-hover:text-black transition-colors"
+                                    >HSchoolOS</span
+                                >
                                 <a
                                     href="https://preview.hschoolos.com"
                                     target="_blank"
@@ -124,8 +139,8 @@ import "../styles/global.css";
                             </h3>
                             <div class="flex items-center gap-3">
                                 <span
-                                    class="text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
-                                    >[ freelance ]</span
+                                    class="text-xs font-bold text-gray-600 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
+                                    >freelance</span
                                 >
                                 <span class="text-sm text-gray-600 font-normal"
                                     >April 2026 - Present</span
@@ -133,43 +148,99 @@ import "../styles/global.css";
                             </div>
                         </div>
 
-                        <p class="text-gray-800 italic mb-4 text-sm sm:text-base">
-                            Homeschooling Management Web App | Parent & Child Portal
+                        <p
+                            class="text-gray-800 italic mb-4 text-sm sm:text-base"
+                        >
+                            Homeschooling Management Web App | Parent & Child
+                            Portal
                         </p>
 
-                        <p class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
-                            A comprehensive, production-ready web application designed to help parents and children manage homeschooling curricula. Features an intuitive task scheduling board for kids to log and monitor daily learning goals, paired with an administrative suite for parents to map study plans, track overall academic progress, and compile comprehensive report cards.
+                        <p
+                            class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base"
+                        >
+                            A gamified homeschooling platform that turns daily
+                            academics into an engaging quest for children while
+                            giving parents comprehensive oversight. Features a
+                            playful task board where kids can log and complete
+                            learning activities, earn points, and build
+                            achievement streaks, paired with a parent dashboard
+                            for tracking progress across subjects and monitoring
+                            each child's learning journey.
                         </p>
 
                         <!-- Collapsible Details Drawer -->
-                        <details class="group mt-4 pt-4 border-t border-dotted border-gray-200">
-                            <summary class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors">
+                        <details
+                            class="group mt-4 pt-4 border-t border-dotted border-gray-200"
+                        >
+                            <summary
+                                class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors"
+                            >
                                 <span>[ View Screenshots & Architecture ]</span>
-                                <span class="transition-transform duration-200 group-open:rotate-90">&rarr;</span>
+                                <span
+                                    class="transition-transform duration-200 group-open:rotate-90"
+                                    >&rarr;</span
+                                >
                             </summary>
-                            
-                            <div class="mt-6 space-y-6 text-sm sm:text-base text-gray-700">
+
+                            <div
+                                class="mt-6 space-y-6 text-sm sm:text-base text-gray-700"
+                            >
                                 <div class="space-y-2">
-                                    <h4 class="font-bold text-black text-sm uppercase tracking-wide">System Architecture</h4>
+                                    <h4
+                                        class="font-bold text-black text-sm uppercase tracking-wide"
+                                    >
+                                        System Architecture
+                                    </h4>
                                     <p class="leading-relaxed">
-                                        HSchoolOS utilizes a reactive, client-side scheduler built with React and synced to a Supabase real-time database. Parents construct customizable weekly calendars that auto-generate checklists on the child’s portal, with progress synced dynamically. Security and user separation are enforced natively via PostgreSQL Row Level Security (RLS) policies.
+                                        Built on Next.js 16 with the App Router,
+                                        self-hosted on a VPS with Supabase as
+                                        the primary database and authentication
+                                        layer. Utilizes PostgreSQL with strict
+                                        Row-Level Security, Supabase Auth with
+                                        PKCE flow, and Cloudflare Turnstile for
+                                        bot protection. Features API routes
+                                        running on the Node.js runtime, Stripe
+                                        integration for subscription billing,
+                                        and Resend for transactional email
+                                        delivery. The frontend employs a custom
+                                        "Puffy Bento" design system with dual
+                                        typography (Quicksand for headings,
+                                        Inter for body), spring-based
+                                        micro-animations, and a tactile
+                                        maximalist aesthetic built on shadcn/ui
+                                        primitives and Tailwind CSS.
                                     </p>
                                 </div>
 
-                                <div class="border border-dashed border-gray-300 rounded bg-gray-50/50 p-8 flex flex-col items-center justify-center text-center max-w-2xl min-h-[160px] group/placeholder transition-all duration-300 hover:border-gray-400">
-                                    <span class="text-2xl mb-2 group-hover/placeholder:scale-110 transition-transform duration-200 select-none">🖼️</span>
-                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">[ HSchoolOS Dashboard Screenshot ]</span>
-                                    <span class="text-xs text-gray-400 font-mono">To display your own screenshot, save an image file at: <code class="bg-gray-100 px-1 py-0.5 rounded text-gray-600">public/images/hschoolos-dashboard.png</code></span>
-                                </div>
+                                <img
+                                    src="/images/hschoolos-dashboard.png"
+                                    alt="HSchoolOS Dashboard Screenshot"
+                                    class="rounded border border-gray-200 shadow-sm max-w-full h-auto"
+                                />
                             </div>
                         </details>
 
                         <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">React</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Astro</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Tailwind CSS</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Supabase</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Full-Stack Dev</span>
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >React</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Next.js</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Tailwind CSS</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Supabase</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Full-Stack Dev</span
+                            >
                         </div>
                     </article>
 
@@ -181,16 +252,23 @@ import "../styles/global.css";
                         <div
                             class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2 mb-2"
                         >
-                            <h3 class="font-bold text-xl text-black flex flex-wrap items-center gap-x-2.5 gap-y-1">
-                                <span class="group-hover:text-black transition-colors">Malaysian Data & Ontology Engine</span>
-                                <span class="text-xs font-mono font-normal text-gray-400 border border-dashed border-gray-300 bg-white/20 px-2 py-0.5 rounded lowercase select-none">
-                                    [ in development ]
+                            <h3
+                                class="font-bold text-xl text-black flex flex-wrap items-center gap-x-2.5 gap-y-1"
+                            >
+                                <span
+                                    class="group-hover:text-black transition-colors"
+                                    >Malaysian Data & Ontology Engine</span
+                                >
+                                <span
+                                    class="text-xs font-mono font-normal text-gray-500 border border-gray-300 bg-gray-100/60 px-2 py-0.5 rounded lowercase select-none"
+                                >
+                                    in development
                                 </span>
                             </h3>
                             <div class="flex items-center gap-3">
                                 <span
-                                    class="text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
-                                    >[ personal ]</span
+                                    class="text-xs font-bold text-gray-600 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
+                                    >personal</span
                                 >
                                 <span class="text-sm text-gray-600 font-normal"
                                     >Startup Showcase</span
@@ -198,43 +276,95 @@ import "../styles/global.css";
                             </div>
                         </div>
 
-                        <p class="text-gray-800 italic mb-4 text-sm sm:text-base">
-                            High-Performance Ontology-Layer & Socio-Economic GIS Pipeline
+                        <p
+                            class="text-gray-800 italic mb-4 text-sm sm:text-base"
+                        >
+                            High-Performance Ontology-Layer & Socio-Economic GIS
+                            Pipeline
                         </p>
 
-                        <p class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
-                            An advanced geospatial data processing engine built to power my upcoming startup. The system maps and models complex correlations in Malaysia by combining multi-modal public transit coverage datasets, historical GIS flood plains, and census-derived targeted subsidy profiles. Engineered using an semantic ontology layer to enable fast, relation-driven queries mapping environment risk and transport accessibility directly to demographics.
+                        <p
+                            class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base"
+                        >
+                            An advanced geospatial data processing engine built
+                            to power my upcoming startup. The system maps and
+                            models complex correlations in Malaysia by combining
+                            multi-modal public transit coverage datasets,
+                            historical GIS flood plains, and census-derived
+                            targeted subsidy profiles. Engineered using an
+                            semantic ontology layer to enable fast,
+                            relation-driven queries mapping environment risk and
+                            transport accessibility directly to demographics.
                         </p>
 
                         <!-- Collapsible Details Drawer -->
-                        <details class="group mt-4 pt-4 border-t border-dotted border-gray-200">
-                            <summary class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors">
+                        <details
+                            class="group mt-4 pt-4 border-t border-dotted border-gray-200"
+                        >
+                            <summary
+                                class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors"
+                            >
                                 <span>[ View Screenshots & Architecture ]</span>
-                                <span class="transition-transform duration-200 group-open:rotate-90">&rarr;</span>
+                                <span
+                                    class="transition-transform duration-200 group-open:rotate-90"
+                                    >&rarr;</span
+                                >
                             </summary>
-                            
-                            <div class="mt-6 space-y-6 text-sm sm:text-base text-gray-700">
-                                <div class="space-y-2">
-                                    <h4 class="font-bold text-black text-sm uppercase tracking-wide">System Architecture</h4>
-                                    <p class="leading-relaxed">
-                                        The application integrates heterogeneous data sources (GTFS transit feeds, Shapefiles from Department of Irrigation & Drainage, and governmental demographic indexes) into a centralized, semantically aligned ontology layer. Built on Postgres/PostGIS with an RDF Triple Store wrapper, the engine runs spatial SPARQL queries to compute accessibility scores and flood vulnerability profiles relative to the household subsidy index.
-                                    </p>
-                                </div>
 
-                                <div class="border border-dashed border-gray-300 rounded bg-gray-50/50 p-8 flex flex-col items-center justify-center text-center max-w-2xl min-h-[160px] group/placeholder transition-all duration-300 hover:border-gray-400">
-                                    <span class="text-2xl mb-2 group-hover/placeholder:scale-110 transition-transform duration-200 select-none">🖼️</span>
-                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">[ Ontology Pipeline Diagram ]</span>
-                                    <span class="text-xs text-gray-400 font-mono">To display your own diagram, save an image file at: <code class="bg-gray-100 px-1 py-0.5 rounded text-gray-600">public/images/malaysia-ontology-pipeline.png</code></span>
+                            <div
+                                class="mt-6 space-y-6 text-sm sm:text-base text-gray-700"
+                            >
+                                <div class="space-y-2">
+                                    <h4
+                                        class="font-bold text-black text-sm uppercase tracking-wide"
+                                    >
+                                        System Architecture
+                                    </h4>
+                                    <p class="leading-relaxed">
+                                        The application integrates heterogeneous
+                                        data sources (GTFS transit feeds,
+                                        Shapefiles from Department of Irrigation
+                                        & Drainage, and governmental demographic
+                                        indexes) into a centralized,
+                                        semantically aligned ontology layer.
+                                        Built on Postgres/PostGIS with an RDF
+                                        Triple Store wrapper, the engine runs
+                                        spatial SPARQL queries to compute
+                                        accessibility scores and flood
+                                        vulnerability profiles relative to the
+                                        household subsidy index.
+                                    </p>
+
+                                    <img
+                                        src="/images/ualabs-dashboard.png"
+                                        alt="UAlabs Dashboard Screenshot"
+                                        class="rounded border border-gray-200 shadow-sm max-w-full h-auto"
+                                    />
                                 </div>
                             </div>
                         </details>
 
                         <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Python</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">PostGIS</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Ontology Modeling</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">FastAPI</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">D3.js / Maps</span>
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Python</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >PostGIS</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Ontology Modeling</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >FastAPI</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >D3.js / Maps</span
+                            >
                         </div>
                     </article>
 
@@ -246,14 +376,19 @@ import "../styles/global.css";
                         <div
                             class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2 mb-2"
                         >
-                            <h3 class="font-bold text-xl text-black flex items-center gap-2">
-                                <span class="group-hover:text-black transition-colors">UK Multimodal Transit Latency Optimizer</span>
-                                <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-2 group-hover:translate-x-0 text-gray-400 font-normal text-lg">&rarr;</span>
+                            <h3
+                                class="font-bold text-xl text-black flex items-center gap-2"
+                            >
+                                <span
+                                    class="group-hover:text-black transition-colors"
+                                    >A Hybrid Algorithmic Framework for Latency
+                                    Reduction in UK Bus Network Systems</span
+                                >
                             </h3>
                             <div class="flex items-center gap-3">
                                 <span
-                                    class="text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
-                                    >[ research ]</span
+                                    class="text-xs font-bold text-gray-600 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
+                                    >research</span
                                 >
                                 <span class="text-sm text-gray-600 font-normal"
                                     >Academic Research</span
@@ -261,43 +396,88 @@ import "../styles/global.css";
                             </div>
                         </div>
 
-                        <p class="text-gray-800 italic mb-4 text-sm sm:text-base">
-                            Postgraduate Group Research | Route Optimization & Graph Analytics
+                        <p
+                            class="text-gray-800 italic mb-4 text-sm sm:text-base"
+                        >
+                            Postgraduate Group Research | Route Optimization &
+                            Graph Analytics
                         </p>
 
-                        <p class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
-                            A highly analytical project dedicated to minimizing latency across the UK public transport network. Built custom graph architectures representing multimodal transit routes directly from open source feeds. We successfully adapted and modified the *Valhalla* open-source routing engine to run against these complex transit graphs, identifying critical bottlenecks and recommending theoretical additions to reduce overall travel delays.
+                        <p
+                            class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base"
+                        >
+                            This project introduces a transparent,
+                            graph-theoretic framework to address declining UK
+                            bus ridership by minimizing network latency and
+                            maximizing accessibility. Moving away from
+                            traditional "black-box" AI optimization , a
+                            rule-based route generation algorithm was developed
+                            utilizing Yen’s K-Shortest Paths and graph
+                            eccentricity metrics. Validated against Greater
+                            Manchester’s Bee Network data , the framework
+                            strategically replaces inefficient routes to
+                            minimize the furthest travel distance across the
+                            region. Final evaluations using census-informed
+                            journey simulations demonstrated that a system-wide
+                            deployment successfully reduced worst-case travel
+                            times by 9 minutes and 20 seconds.
                         </p>
 
-                        <!-- Collapsible Details Drawer -->
-                        <details class="group mt-4 pt-4 border-t border-dotted border-gray-200">
-                            <summary class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors">
-                                <span>[ View Screenshots & Architecture ]</span>
-                                <span class="transition-transform duration-200 group-open:rotate-90">&rarr;</span>
-                            </summary>
-                            
-                            <div class="mt-6 space-y-6 text-sm sm:text-base text-gray-700">
-                                <div class="space-y-2">
-                                    <h4 class="font-bold text-black text-sm uppercase tracking-wide">System Architecture</h4>
-                                    <p class="leading-relaxed">
-                                        The project modeled the UK public transport network as a directed, multi-layered graph. We extracted topological data from OpenStreetMap and merged it with temporal schedule feeds (GTFS/TransXChange). By developing a customized cost-model script, we compiled these into a custom Valhalla routing tile set, adjusting transit transfer penalties and node connection costs to accurately test delay reduction when introducing hypothetical rail-to-bus bridges.
-                                    </p>
-                                </div>
-
-                                <div class="border border-dashed border-gray-300 rounded bg-gray-50/50 p-8 flex flex-col items-center justify-center text-center max-w-2xl min-h-[160px] group/placeholder transition-all duration-300 hover:border-gray-400">
-                                    <span class="text-2xl mb-2 group-hover/placeholder:scale-110 transition-transform duration-200 select-none">🖼️</span>
-                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">[ Routing Engine Map & UI Mockup ]</span>
-                                    <span class="text-xs text-gray-400 font-mono">To display your own map screenshot, save an image file at: <code class="bg-gray-100 px-1 py-0.5 rounded text-gray-600">public/images/transit-latency-optimizer.png</code></span>
-                                </div>
-                            </div>
-                        </details>
+                        <div class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700">
+                            <p class="leading-relaxed">
+                                The system models transit networks as
+                                multi-modal, weighted directed graphs
+                                using Python and NetworkX. The pipeline
+                                integrates National Public Transport
+                                Access Nodes (NaPTAN) stop data with
+                                custom OpenStreetMap road networks via
+                                OSMnx and walking paths through the OSRM
+                                API. Primary responsibilities focused on
+                                implementing the core pseudocode and
+                                orchestrating the framework's decoupled
+                                modules. This architecture efficiently
+                                routes candidate paths through a
+                                reversed-graph Multi-Source Dijkstra
+                                traversal to compute mean network
+                                eccentricity , paired with a modified
+                                $A^*$ journey simulator that applies
+                                exponential transfer penalties inspired
+                                by Stockholm's KRESU weight tables.
+                            </p>
+                            <p class="pt-2">
+                                <a
+                                    href="https://drive.google.com/file/d/1isvGv0_56IWcHk0W4oayLC4ak6f4aBc5/view?usp=drive_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-xs font-bold text-gray-600 uppercase tracking-wider hover:text-black transition-colors border border-gray-300 bg-white/60 px-3 py-1.5 rounded"
+                                >
+                                    <span>Read the Full Paper</span>
+                                    <span class="text-[10px]">&nearrow;</span>
+                                </a>
+                            </p>
+                        </div>
 
                         <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Graphs</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Valhalla Engine</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">OpenStreetMap</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Python</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">API Design</span>
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Graphs</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Valhalla Engine</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >OpenStreetMap</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Python</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >API Design</span
+                            >
                         </div>
                     </article>
 
@@ -309,14 +489,18 @@ import "../styles/global.css";
                         <div
                             class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-2 mb-2"
                         >
-                            <h3 class="font-bold text-xl text-black flex items-center gap-2">
-                                <span class="group-hover:text-black transition-colors">Reinforcement Learning Bike Path Planner</span>
-                                <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-2 group-hover:translate-x-0 text-gray-400 font-normal text-lg">&rarr;</span>
+                            <h3
+                                class="font-bold text-xl text-black flex items-center gap-2"
+                            >
+                                <span
+                                    class="group-hover:text-black transition-colors"
+                                    >Reinforcement Learning Bike Path Planner</span
+                                >
                             </h3>
                             <div class="flex items-center gap-3">
                                 <span
-                                    class="text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
-                                    >[ research ]</span
+                                    class="text-xs font-bold text-gray-600 uppercase tracking-wider bg-gray-200/60 px-2.5 py-0.5 rounded"
+                                    >research</span
                                 >
                                 <span class="text-sm text-gray-600 font-normal"
                                     >Undergraduate Research</span
@@ -324,49 +508,103 @@ import "../styles/global.css";
                             </div>
                         </div>
 
-                        <p class="text-gray-800 italic mb-4 text-sm sm:text-base">
-                            Undergraduate Research | Network Topology & Reinforcement Learning
+                        <p
+                            class="text-gray-800 italic mb-4 text-sm sm:text-base"
+                        >
+                            Undergraduate Research | Network Topology &
+                            Reinforcement Learning
                         </p>
 
-                        <p class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base">
-                            An innovative machine learning project establishing a reinforcement learning model to advise urban city planners on municipal bike path expansions. Structured network topologies from OpenStreetMap road data, engineered a multi-factor MDP (Markov Decision Process) environment using Gymnasium, and trained RL agents using stable-baselines3. The model outputs expansion nodes based on safety, connectivity, and budget parameters.
+                        <p
+                            class="text-gray-700 leading-relaxed mb-4 text-sm sm:text-base"
+                        >
+                            This project presents an intelligent reinforcement
+                            learning (RL) framework designed to assist city
+                            planners with strategic bike path network expansion.
+                            Moving away from traditional, single-objective graph
+                            searches or data-heavy supervised learning models, a
+                            custom Gymnasium environment was engineered to
+                            simulate expansion choices under strict municipal
+                            budget constraints. Utilizing Proximal Policy
+                            Optimization (PPO), the model learns an adaptive
+                            policy that balances competing urban metrics,
+                            including network connectivity, direct path
+                            efficiency, and total population served. Validated
+                            using real-world road data from Otley, UK, the
+                            framework successfully mapped distributed network
+                            infrastructure extensions using 98.5% of its
+                            allocated budget, demonstrating the viable
+                            application of RL to sequential decision-making in
+                            urban planning.
                         </p>
 
-                        <!-- Collapsible Details Drawer -->
-                        <details class="group mt-4 pt-4 border-t border-dotted border-gray-200">
-                            <summary class="text-xs font-bold text-gray-500 hover:text-black uppercase list-none [&::-webkit-details-marker]:hidden cursor-pointer flex items-center gap-1.5 select-none transition-colors">
-                                <span>[ View Screenshots & Architecture ]</span>
-                                <span class="transition-transform duration-200 group-open:rotate-90">&rarr;</span>
-                            </summary>
-                            
-                            <div class="mt-6 space-y-6 text-sm sm:text-base text-gray-700">
-                                <div class="space-y-2">
-                                    <h4 class="font-bold text-black text-sm uppercase tracking-wide">System Architecture</h4>
-                                    <p class="leading-relaxed">
-                                        The bike path expansion is formulated as a step-by-step Markov Decision Process (MDP) in a custom Gym environment. The agent takes actions by proposing new graph links. The reward function calculates connectivity shifts (betweenness centrality), budget depreciation, and population accessibility. We utilized stable-baselines3 to train a Proximal Policy Optimization (PPO) model, demonstrating a 34% improvement in network expansion efficiency compared to standard greedy heuristics.
-                                    </p>
-                                </div>
-
-                                <div class="border border-dashed border-gray-300 rounded bg-gray-50/50 p-8 flex flex-col items-center justify-center text-center max-w-2xl min-h-[160px] group/placeholder transition-all duration-300 hover:border-gray-400">
-                                    <span class="text-2xl mb-2 group-hover/placeholder:scale-110 transition-transform duration-200 select-none">🖼️</span>
-                                    <span class="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">[ RL Training Statistics & Grid Map ]</span>
-                                    <span class="text-xs text-gray-400 font-mono">To display your training graphs, save an image file at: <code class="bg-gray-100 px-1 py-0.5 rounded text-gray-600">public/images/bike-path-rl-planner.png</code></span>
-                                </div>
-                            </div>
-                        </details>
+                        <div class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700">
+                            <p class="leading-relaxed">
+                                The system models urban spatial networks
+                                as multi-modal, weighted directed graphs
+                                by streaming real-world geospatial data
+                                from OpenStreetMap via OSMnx. To support
+                                the massive computational overhead of
+                                iterative RL training steps, the graph
+                                pipeline converts base NetworkX
+                                structures into high-performance
+                                rustworkx PyDiGraphs to leverage a
+                                Rust-backed processing layer. Core
+                                training execution relies on
+                                Stable-Baselines3 to run parallelized
+                                PPO actors across vectorized
+                                SubprocVecEnv environments, achieving a
+                                70% increase in CPU training efficiency.
+                                The engine computes reward metrics via a
+                                continuous four-dimensional observation
+                                vector, utilizing aggressive
+                                node-sampling approximations for
+                                transitivity and localized Dijkstra
+                                estimations to calculate network
+                                fragmentation changes without global
+                                calculation bottlenecking.
+                            </p>
+                            <p class="pt-2">
+                                <a
+                                    href="https://drive.google.com/file/d/1JC_B2Uv0tuRhysv90T03CmOeHXc0VH2k/view?usp=drive_link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex items-center gap-1.5 text-xs font-bold text-gray-600 uppercase tracking-wider hover:text-black transition-colors border border-gray-300 bg-white/60 px-3 py-1.5 rounded"
+                                >
+                                    <span>Read the Full Paper</span>
+                                    <span class="text-[10px]">&nearrow;</span>
+                                </a>
+                            </p>
+                        </div>
 
                         <div class="flex flex-wrap gap-2 mt-6">
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Reinforcement Learning</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Gymnasium</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">stable-baselines3</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Python / OSMnx</span>
-                            <span class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium">Networks</span>
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Reinforcement Learning</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Gymnasium</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >stable-baselines3</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Python / OSMnx</span
+                            >
+                            <span
+                                class="text-xs bg-gray-200/50 hover:bg-gray-200 text-gray-700 px-2.5 py-1 rounded transition-colors font-medium"
+                                >Networks</span
+                            >
                         </div>
                     </article>
                 </div>
             </section>
 
-            <div class="border-b-4 border-dotted border-gray-300 w-full mt-4"></div>
+            <div class="border-b-4 border-dotted border-gray-300 w-full mt-4">
+            </div>
 
             <!-- Navigation back to Home -->
             <nav class="pb-8">
@@ -381,45 +619,50 @@ import "../styles/global.css";
 
         <script>
             // Get interactive filter buttons and project cards
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const projectCards = document.querySelectorAll('.project-card');
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const projectCards = document.querySelectorAll(".project-card");
 
-            filterButtons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const filterValue = btn.getAttribute('data-filter');
+            filterButtons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const filterValue = btn.getAttribute("data-filter");
 
                     // 1. Update filter tab visual styles
-                    filterButtons.forEach(b => {
-                        b.classList.remove('text-black', 'border-black');
-                        b.classList.add('text-gray-400', 'border-transparent');
+                    filterButtons.forEach((b) => {
+                        b.classList.remove("text-black", "border-black");
+                        b.classList.add("text-gray-400", "border-transparent");
                     });
-                    btn.classList.add('text-black', 'border-black');
-                    btn.classList.remove('text-gray-400', 'border-transparent');
+                    btn.classList.add("text-black", "border-black");
+                    btn.classList.remove("text-gray-400", "border-transparent");
 
                     // 2. Perform card fade transitions and hide/show actions
-                    projectCards.forEach(card => {
-                        const category = card.getAttribute('data-category');
-                        const isMatch = filterValue === 'all' || category === filterValue;
+                    projectCards.forEach((card) => {
+                        const category = card.getAttribute("data-category");
+                        const isMatch =
+                            filterValue === "all" || category === filterValue;
 
                         if (isMatch) {
                             // Show element: restore standard display first
-                            (card as HTMLElement).style.display = 'block';
-                            
+                            (card as HTMLElement).style.display = "block";
+
                             // Trigger reflow to guarantee the entry animation plays
                             void (card as HTMLElement).offsetHeight;
 
                             // Remove fading states
-                            card.classList.remove('opacity-0', 'translate-y-2');
-                            card.classList.add('opacity-100', 'translate-y-0');
+                            card.classList.remove("opacity-0", "translate-y-2");
+                            card.classList.add("opacity-100", "translate-y-0");
                         } else {
                             // Hide element: trigger fade-out transition
-                            card.classList.remove('opacity-100', 'translate-y-0');
-                            card.classList.add('opacity-0', 'translate-y-2');
+                            card.classList.remove(
+                                "opacity-100",
+                                "translate-y-0",
+                            );
+                            card.classList.add("opacity-0", "translate-y-2");
 
                             // Wait for 300ms transition to finish before toggling display: none
                             setTimeout(() => {
-                                if (card.classList.contains('opacity-0')) {
-                                    (card as HTMLElement).style.display = 'none';
+                                if (card.classList.contains("opacity-0")) {
+                                    (card as HTMLElement).style.display =
+                                        "none";
                                 }
                             }, 300);
                         }
