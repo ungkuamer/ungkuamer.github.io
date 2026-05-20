@@ -1,0 +1,143 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>ua. - contact</title>
+    </head>
+    <body
+        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col justify-center items-center p-8 selection:bg-gray-300"
+    >
+        <!-- Wrapper matching the homepage max-width and layout rhythm -->
+        <div class="max-w-4xl w-full flex flex-col gap-16 md:gap-20">
+            <!-- Top Section: Title & Content -->
+            <main>
+                <h1
+                    class="text-5xl md:text-7xl font-bold tracking-tight mb-12 text-black"
+                >
+                    contact.
+                </h1>
+
+                <div
+                    class="space-y-6 xs:text-xs sm:text-sm md:text-lg text-gray-800"
+                >
+                    <p>
+                        Feel free to reach out for project collaborations, job opportunities, or just to say hello.
+                    </p>
+
+                    <div class="space-y-4 pt-2 font-mono">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                            <span class="text-gray-400 w-24 select-none">email:</span>
+                            <div class="flex items-center gap-3">
+                                <a
+                                    href="mailto:ungkuamer@gmail.com"
+                                    class="text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
+                                >
+                                    ungkuamer@gmail.com
+                                </a>
+                                <button
+                                    id="copy-email-btn"
+                                    class="text-xs text-gray-400 hover:text-black border border-dashed border-gray-300 hover:border-gray-500 px-2 py-0.5 rounded cursor-pointer transition-all select-none"
+                                >
+                                    [ copy ]
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                            <span class="text-gray-400 w-24 select-none">github:</span>
+                            <a
+                                href="https://github.com/ungkuamer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
+                            >
+                                github.com/ungkuamer &rarr;
+                            </a>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                            <span class="text-gray-400 w-24 select-none">linkedin:</span>
+                            <a
+                                href="https://www.linkedin.com/in/ungku-amer-iskandar/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
+                            >
+                                linkedin.com/in/ungku-amer-iskandar &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Dotted lines -->
+                    <div class="max-w-2xl space-y-4 pt-2">
+                        <div
+                            class="border-b-4 border-dotted border-gray-300 w-full"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Bottom Section: Navigation Links mirroring homepage style -->
+            <nav>
+                <ul
+                    class="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 text-lg md:text-xl text-gray-700"
+                >
+                    <li>
+                        <a
+                            href="/"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/resume"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            resume
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/work"
+                            class="hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
+                        >
+                            my work and researches
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <script>
+            // Clipboard functionality
+            const copyBtn = document.getElementById('copy-email-btn');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', () => {
+                    navigator.clipboard.writeText('ungkuamer@gmail.com')
+                        .then(() => {
+                            const originalText = copyBtn.textContent;
+                            copyBtn.textContent = '[ copied! ]';
+                            copyBtn.classList.remove('text-gray-400');
+                            copyBtn.classList.add('text-green-600', 'font-bold');
+                            
+                            setTimeout(() => {
+                                copyBtn.textContent = originalText;
+                                copyBtn.classList.remove('text-green-600', 'font-bold');
+                                copyBtn.classList.add('text-gray-400');
+                            }, 2000);
+                        })
+                        .catch(err => {
+                            console.error('Clipboard copy failed: ', err);
+                        });
+                });
+            }
+        </script>
+    </body>
+</html>
