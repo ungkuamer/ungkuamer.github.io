@@ -1,1 +1,143 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Smooth transitions for a premium interactive feel */
+body, a, button, input, select, textarea, div, svg {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================
+   Dark Mode Styling System
+   ========================================== */
+
+/* Outer body & standard page background overrides */
+.dark body,
+.dark .bg-\[\#F8F9FA\] {
+  background-color: #080c14 !important; /* Premium deep dark slate */
+  color: #f1f5f9 !important;
+}
+
+/* Base text color overrides */
+.dark .text-black,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+  color: #ffffff !important;
+}
+
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700 {
+  color: #cbd5e1 !important; /* light gray text */
+}
+
+.dark .text-gray-600,
+.dark .text-gray-500 {
+  color: #94a3b8 !important; /* muted light gray */
+}
+
+/* Navigation items & links */
+.dark nav a,
+.dark header a,
+.dark ul li a {
+  color: #94a3b8 !important;
+  text-decoration-color: #334155 !important;
+}
+
+.dark nav a:hover,
+.dark header a:hover,
+.dark ul li a:hover,
+.dark .hover\:text-black:hover {
+  color: #38bdf8 !important; /* Modern premium cyan highlight */
+  text-decoration-color: #38bdf8 !important;
+}
+
+/* Decorative dotted lines */
+.dark .border-dotted,
+.dark .border-gray-300,
+.dark .border-gray-200 {
+  border-color: #1e293b !important;
+}
+
+/* Cards & containers (e.g. pricing page, selection boxes) */
+.dark .bg-white {
+  background-color: #0f172a !important; /* Sleek slate-900 card */
+  border-color: #1e293b !important;
+  color: #f1f5f9 !important;
+}
+
+.dark .border-black {
+  border-color: #1e293b !important;
+}
+
+/* Neon-brutalism active state shadows */
+.dark .hover\:shadow-\[4px_4px_0px_0px_rgba\(0\,0\,0\,1\)\]:hover {
+  box-shadow: 4px 4px 0px 0px rgba(56, 189, 248, 0.4) !important; /* Cyan shadow */
+}
+
+/* Buttons: blackbg turns into lightbg, and whitebg turns into darkbg */
+.dark .bg-black {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #f8fafc !important;
+}
+
+.dark .bg-black:hover {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #1e293b !important;
+}
+
+.dark .hover\:bg-white:hover {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #334155 !important;
+}
+
+/* Badges & small tags in Work page */
+.dark .bg-gray-200\/60,
+.dark .bg-gray-200\/50,
+.dark .bg-gray-100\/60 {
+  background-color: #1e293b !important;
+  color: #cbd5e1 !important;
+}
+
+.dark .bg-gray-200\/50:hover,
+.dark .hover\:bg-gray-200:hover {
+  background-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+.dark .project-card {
+  border-color: transparent !important;
+}
+
+.dark .project-card:hover {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  border-color: #1e293b !important;
+}
+
+.dark .text-gray-400 {
+  color: #64748b !important;
+}
+
+.dark .hover\:text-black:hover .text-gray-400 {
+  color: #38bdf8 !important;
+}
+
+/* Selection background */
+.dark selection,
+.dark ::selection,
+.dark ::-moz-selection {
+  background-color: #334155 !important;
+  color: #ffffff !important;
+}
+
+/* Fix for project titles turning black on hover in dark mode */
+.dark .group:hover .group-hover\:text-black {
+  color: #ffffff !important;
+}

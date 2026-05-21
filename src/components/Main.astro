@@ -2,18 +2,12 @@
 import "../styles/global.css";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>ua.</title>
-    </head>
     <!--
     Changed 'justify-between' to 'justify-center' and added 'items-center'
     to pull the entire content block into the exact middle of the viewport.
   -->
-    <body
-        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col justify-center items-center p-8 selection:bg-gray-300"
+    <div
+        class="min-h-screen flex flex-col justify-center items-center p-8 w-full"
     >
         <!-- Wrapper to keep the max width and handle spacing between top/bottom -->
         <div class="max-w-4xl w-full flex flex-col gap-16 md:gap-20">
@@ -90,5 +84,4 @@ import "../styles/global.css";
                 </ul>
             </nav>
         </div>
-    </body>
-</html>
+    </div>

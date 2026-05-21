@@ -2,14 +2,8 @@
 import "../styles/global.css";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>ua.</title>
-    </head>
-    <body
-        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col items-center p-8 md:p-16 selection:bg-gray-300"
+    <div
+        class="min-h-screen flex flex-col items-center p-8 md:p-16 w-full"
     >
         <div class="max-w-4xl w-full flex flex-col gap-12 md:gap-16">
             <!-- Header -->
@@ -52,26 +46,6 @@ import "../styles/global.css";
                             class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
                         >
                             contact
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://github.com/ungkuamer"
-                            class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            github
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/ungku-amer-iskandar/"
-                            class="hover:text-black hover:underline underline-offset-4 decoration-gray-400 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            linkedin
                         </a>
                     </li>
                 </ul>
@@ -423,26 +397,26 @@ import "../styles/global.css";
                             times by 9 minutes and 20 seconds.
                         </p>
 
-                        <div class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700">
+                        <div
+                            class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700"
+                        >
                             <p class="leading-relaxed">
                                 The system models transit networks as
-                                multi-modal, weighted directed graphs
-                                using Python and NetworkX. The pipeline
-                                integrates National Public Transport
-                                Access Nodes (NaPTAN) stop data with
-                                custom OpenStreetMap road networks via
-                                OSMnx and walking paths through the OSRM
-                                API. Primary responsibilities focused on
+                                multi-modal, weighted directed graphs using
+                                Python and NetworkX. The pipeline integrates
+                                National Public Transport Access Nodes (NaPTAN)
+                                stop data with custom OpenStreetMap road
+                                networks via OSMnx and walking paths through the
+                                OSRM API. Primary responsibilities focused on
                                 implementing the core pseudocode and
-                                orchestrating the framework's decoupled
-                                modules. This architecture efficiently
-                                routes candidate paths through a
-                                reversed-graph Multi-Source Dijkstra
-                                traversal to compute mean network
-                                eccentricity , paired with a modified
-                                $A^*$ journey simulator that applies
-                                exponential transfer penalties inspired
-                                by Stockholm's KRESU weight tables.
+                                orchestrating the framework's decoupled modules.
+                                This architecture efficiently routes candidate
+                                paths through a reversed-graph Multi-Source
+                                Dijkstra traversal to compute mean network
+                                eccentricity , paired with a modified $A^*$
+                                journey simulator that applies exponential
+                                transfer penalties inspired by Stockholm's KRESU
+                                weight tables.
                             </p>
                             <p class="pt-2">
                                 <a
@@ -538,31 +512,29 @@ import "../styles/global.css";
                             urban planning.
                         </p>
 
-                        <div class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700">
+                        <div
+                            class="mt-4 pt-4 border-t border-dotted border-gray-200 space-y-2 text-sm sm:text-base text-gray-700"
+                        >
                             <p class="leading-relaxed">
-                                The system models urban spatial networks
-                                as multi-modal, weighted directed graphs
-                                by streaming real-world geospatial data
-                                from OpenStreetMap via OSMnx. To support
-                                the massive computational overhead of
-                                iterative RL training steps, the graph
-                                pipeline converts base NetworkX
-                                structures into high-performance
-                                rustworkx PyDiGraphs to leverage a
-                                Rust-backed processing layer. Core
-                                training execution relies on
-                                Stable-Baselines3 to run parallelized
-                                PPO actors across vectorized
-                                SubprocVecEnv environments, achieving a
-                                70% increase in CPU training efficiency.
-                                The engine computes reward metrics via a
-                                continuous four-dimensional observation
-                                vector, utilizing aggressive
-                                node-sampling approximations for
-                                transitivity and localized Dijkstra
-                                estimations to calculate network
-                                fragmentation changes without global
-                                calculation bottlenecking.
+                                The system models urban spatial networks as
+                                multi-modal, weighted directed graphs by
+                                streaming real-world geospatial data from
+                                OpenStreetMap via OSMnx. To support the massive
+                                computational overhead of iterative RL training
+                                steps, the graph pipeline converts base NetworkX
+                                structures into high-performance rustworkx
+                                PyDiGraphs to leverage a Rust-backed processing
+                                layer. Core training execution relies on
+                                Stable-Baselines3 to run parallelized PPO actors
+                                across vectorized SubprocVecEnv environments,
+                                achieving a 70% increase in CPU training
+                                efficiency. The engine computes reward metrics
+                                via a continuous four-dimensional observation
+                                vector, utilizing aggressive node-sampling
+                                approximations for transitivity and localized
+                                Dijkstra estimations to calculate network
+                                fragmentation changes without global calculation
+                                bottlenecking.
                             </p>
                             <p class="pt-2">
                                 <a
@@ -670,5 +642,4 @@ import "../styles/global.css";
                 });
             });
         </script>
-    </body>
-</html>
+    </div>

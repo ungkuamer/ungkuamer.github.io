@@ -1,5 +1,16 @@
 ---
 import "../styles/global.css";
+import ThemeToggle from "../components/ThemeToggle.astro";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "ua.",
+    description = "MEng Computer Science w/ AI student at the University of Leeds, graduating July 2026. Experienced in machine learning, graph-based optimisation, and full-stack systems."
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -8,10 +19,31 @@ import "../styles/global.css";
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>ua.</title>
+        <meta name="description" content={description} />
+        <title>{title}</title>
+        
+        <!-- Blocking script in the head to prevent Flash of Light Mode (FOUC) -->
+        <script is:inline>
+            const getTheme = () => {
+                if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+                    return localStorage.getItem('theme');
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+            const theme = getTheme();
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            if (typeof localStorage !== 'undefined') {
+                localStorage.setItem('theme', theme);
+            }
+        </script>
     </head>
-    <body>
+    <body class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen selection:bg-gray-300">
         <slot />
+        <ThemeToggle />
     </body>
 </html>
 

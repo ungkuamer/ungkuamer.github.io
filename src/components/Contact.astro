@@ -2,14 +2,8 @@
 import "../styles/global.css";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>ua. - contact</title>
-    </head>
-    <body
-        class="bg-[#F8F9FA] text-gray-900 font-mono min-h-screen flex flex-col justify-center items-center p-8 selection:bg-gray-300"
+    <div
+        class="min-h-screen flex flex-col justify-center items-center p-8 w-full"
     >
         <!-- Wrapper matching the homepage max-width and layout rhythm -->
         <div class="max-w-4xl w-full flex flex-col gap-16 md:gap-20">
@@ -244,5 +238,4 @@ import "../styles/global.css";
             initSelectionBox();
             document.addEventListener('astro:page-load', initSelectionBox);
         </script>
-    </body>
-</html>
+    </div>
