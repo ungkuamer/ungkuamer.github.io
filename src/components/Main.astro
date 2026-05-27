@@ -2,40 +2,34 @@
 import "../styles/global.css";
 ---
 
-    <!--
-    Changed 'justify-between' to 'justify-center' and added 'items-center'
-    to pull the entire content block into the exact middle of the viewport.
-  -->
     <div
-        class="min-h-screen flex flex-col justify-center items-center p-8 w-full"
+        class="flex-1 flex flex-col justify-center items-center p-8 w-full my-auto"
     >
-        <!-- Wrapper to keep the max width and handle spacing between top/bottom -->
-        <div class="max-w-4xl w-full flex flex-col gap-16 md:gap-20">
+        <!-- Wrapper to keep the max width -->
+        <div class="max-w-4xl w-full flex flex-col gap-12">
             <!-- Top Section: Title & Summary -->
             <main>
                 <h1
-                    class="text-5xl md:text-7xl font-bold tracking-tight mb-12 text-black"
+                    class="text-5xl md:text-7xl font-bold tracking-tight mb-10 text-black"
                 >
                     ungkuamer.
                 </h1>
 
                 <div
-                    class="space-y-6 xs:text-xs sm:text-sm md:text-lg text-gray-800"
+                    class="space-y-6 xs:text-xs sm:text-sm md:text-lg text-gray-800 leading-relaxed"
                 >
+                    <p class="font-bold text-black text-lg md:text-2xl leading-snug">
+                        I build high-performance web systems and AI applications that help businesses ship faster, reduce hosting overhead, and scale without technical debt.
+                    </p>
                     <p>
-                        MEng Computer Science w/ AI student at the University of
-                        Leeds, graduating July 2026. Experienced in implementing
-                        machine learning algorithms, graph-based optimisation,
-                        and full-stack systems. Built and deployed projects
-                        involving reinforcement learning, scalable web
-                        applications, graphs and routing engines. I have
-                        particular interest in maps, public transport and
-                        logistics optimisation. I do freelance web dev on the
-                        side.
+                        Instead of letting you get bogged down in tech stack debates or server management, I handle the entire engineering lifecycle. You get fast, production-ready systems designed to solve immediate business bottlenecks while remaining maintainable and cheap to run as you grow.
+                    </p>
+                    <p>
+                        Whether launching an interactive SaaS MVP, setting up an AI pipeline, or auditing code to slash cloud expenses, my priority is the same: delivering maximum business value with the cleanest, most reliable technology possible.
                     </p>
 
                     <!-- Dotted lines -->
-                    <div class="max-w-2xl space-y-4 pt-2">
+                    <div class="max-w-2xl space-y-4 pt-4">
                         <div
                             class="border-b-4 border-dotted border-gray-300 w-full"
                         >
@@ -43,45 +37,5 @@ import "../styles/global.css";
                     </div>
                 </div>
             </main>
-
-            <!-- Bottom Section: Links -->
-            <nav>
-                <ul
-                    class="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 text-lg md:text-xl text-gray-700"
-                >
-                    <li>
-                        <a
-                            href="/resume"
-                            class="group hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
-                        >
-                            resume <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/work"
-                            class="group hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
-                        >
-                            my work and researches <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/pricing"
-                            class="group hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
-                        >
-                            rates <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/contact"
-                            class="group hover:text-black hover:underline underline-offset-8 decoration-gray-400 transition-colors"
-                        >
-                            contact me <span class="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
